@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif;
+}
+
 .tree-container {
     width: 30%;
 }
@@ -5,6 +9,16 @@
 .tree,
 .tree ul {
     list-style: none;
+}
+
+.tree a {
+    text-decoration: none;
+    color: initial;
+}
+
+/*Tabulacion de las subcarpetas*/
+.subtree {
+    padding-left: 1.75em;
 }
 
 .folder {
@@ -16,6 +30,7 @@
     color: #f1d364;
 }
 
-.fa-chevron-circle-down {
+.fa-chevron-circle-down,
+.fa-chevron-circle-right {
     color: #333;
 }
