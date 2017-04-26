@@ -1,2 +1,2 @@
 # directorytree
-Directory tree in HTML, CSS and jQuery
+Directory tree writen in HTML, CSS and jQuery
