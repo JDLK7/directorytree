@@ -2,18 +2,24 @@ $(function() {
     $('.folder>a').click(function(e) {
         e.preventDefault();
 
-        var icon = $(this).find('.toggle');
+        var toggleIcon = $(this).find('.toggle');
+        var folderIcon = toggleIcon.next();
         var subfolders = $(this).next();
+
         if(subfolders.hasClass('subtree')) {
             if (subfolders.is(":hidden")) {
                 subfolders.show();
-                icon.removeClass('fa-chevron-circle-right')
+                toggleIcon.removeClass('fa-chevron-circle-right')
                     .addClass('fa-chevron-circle-down');
+                folderIcon.removeClass('fa-folder')
+                    .addClass('fa-folder-open');                    
             }
             else {
                 subfolders.hide();
-                icon.removeClass('fa-chevron-circle-down')
+                toggleIcon.removeClass('fa-chevron-circle-down')
                     .addClass('fa-chevron-circle-right');
+                folderIcon.removeClass('fa-folder-open')
+                    .addClass('fa-folder');                        
             }
         }
     });

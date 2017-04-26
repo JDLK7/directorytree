@@ -26,7 +26,8 @@ body {
     margin: 10px 0;
 }
 
-.fa-folder {
+.fa-folder,
+.fa-folder-open {
     color: #f1d364;
 }
 
