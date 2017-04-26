@@ -1,0 +1,21 @@
+.tree-container {
+    width: 30%;
+}
+
+.tree,
+.tree ul {
+    list-style: none;
+}
+
+.folder {
+    display: block;
+    margin: 10px 0;
+}
+
+.fa-folder {
+    color: #f1d364;
+}
+
+.fa-chevron-circle-down {
+    color: #333;
+}
